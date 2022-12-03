@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>99 Bottles of Beer on the Wall</title>
+</head>
+<body>
+  <script>
+  for (let i = 99; i >= 0; i--) {
+  if (i >= 2) {
+    console.log(`${i} bottles of beer on the wall, ${i} bottles of beer.`);
+    console.log(`Take one down and pass it around, ${i - 1} bottles of beer on the wall.
+    `);
+  }
+
+  if (i == 1) {
+    console.log(`1 bottle of beer on the wall, 1 bottle of beer.`);
+    console.log(`Take one down and pass it around, no more bottles of beer on the wall.
+    `);
+  }
+
+  if (i == 0) {
+    console.log(`No more bottles of beer on the wall, no more bottles of beer.`);
+    console.log(`Go to the store and buy some more, 99 bottles of beer on the wall.
+    `);
+  }
+}
+  </script>
+</body>
+</html>
